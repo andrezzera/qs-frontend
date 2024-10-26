@@ -6,7 +6,11 @@ import { VenueContext } from "./venue.context";
 
 export const VenueProvider = ({ children }: VenueProviderProps) => {
   const [venue, setVenue] = useState<Venue>({
-    webSettings: { navBackgroundColour: "", primaryColour: "" },
+    webSettings: {
+      navBackgroundColour: "",
+      primaryColour: "",
+      bannerImage: "",
+    },
   });
 
   const fetchVenue = async () => {

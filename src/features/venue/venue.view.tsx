@@ -1,8 +1,10 @@
 import React from "react";
 import * as S from "./venue.styles";
-import { HamburgerIcon } from "@/shared/assets/icons";
+import { HamburgerIcon, SearchIcon } from "@/shared/assets/icons";
+import { useVenue } from "@/shared/context/venue/venue.hooks";
 
 const VenueView: React.FC = () => {
+  const { venue } = useVenue();
   return (
     <>
       <S.Menu>
@@ -14,6 +16,21 @@ const VenueView: React.FC = () => {
           </div>
         </div>
       </S.Menu>
+      <S.Banner src={venue.webSettings.bannerImage} />
+      <S.SearchField>
+        <label className="field__wrapper" htmlFor="search">
+          <div className="field__icon">
+            <img src={SearchIcon} alt="" />
+          </div>
+          <input
+            className="field__input"
+            type="text"
+            name="search"
+            id="search"
+            placeholder="Search menu items"
+          />
+        </label>
+      </S.SearchField>
     </>
   );
 };

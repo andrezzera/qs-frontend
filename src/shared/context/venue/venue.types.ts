@@ -2,6 +2,7 @@ export interface Venue {
   webSettings: {
     primaryColour: string;
     navBackgroundColour: string;
+    bannerImage: string;
   };
 }
 

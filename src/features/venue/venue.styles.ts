@@ -33,3 +33,38 @@ export const Menu = styled.nav`
     letter-spacing: 0.75px;
   }
 `;
+
+export const Banner = styled.img`
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  vertical-align: middle;
+`;
+
+export const SearchField = styled.div`
+  padding: 16px;
+  .field__wrapper {
+    width: 100%;
+    height: 40px;
+    border-radius: 7px;
+    border: 1px solid #8a94a4;
+    display: flex;
+  }
+
+  .field__icon {
+    padding: 10px;
+  }
+
+  .field__input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 7px;
+    outline: none;
+    padding-right: 10px;
+    font-size: 16px;
+    &::placeholder {
+      color: #8a94a4;
+    }
+  }
+`;

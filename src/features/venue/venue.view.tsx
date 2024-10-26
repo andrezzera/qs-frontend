@@ -31,6 +31,45 @@ const VenueView: React.FC = () => {
           />
         </label>
       </S.SearchField>
+
+      <S.SectionsNavigator>
+        <div className="section section--active">
+          <div className="section__image">
+            <img src={""} alt={""} />
+          </div>
+          <div className="section__title">Burgers</div>
+        </div>
+        <div className="section">
+          <div className="section__image">
+            <img src={""} alt={""} />
+          </div>
+          <div className="section__title">Burgers</div>
+        </div>
+        <div className="section">
+          <div className="section__image">
+            <img src={""} alt={""} />
+          </div>
+          <div className="section__title">Burgers</div>
+        </div>
+        <div className="section">
+          <div className="section__image">
+            <img src={""} alt={""} />
+          </div>
+          <div className="section__title">Burgers</div>
+        </div>
+        <div className="section">
+          <div className="section__image">
+            <img src={""} alt={""} />
+          </div>
+          <div className="section__title">Burgers</div>
+        </div>
+        <div className="section">
+          <div className="section__image">
+            <img src={""} alt={""} />
+          </div>
+          <div className="section__title">Burgers</div>
+        </div>
+      </S.SectionsNavigator>
     </>
   );
 };

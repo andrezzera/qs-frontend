@@ -10,6 +10,11 @@ const VenueView: React.FC = () => {
       <S.Menu>
         <div className="menu__action-wrapper" />
         <div className="menu__title">Menu</div>
+        <ul className="menu__items">
+          <li className="menu__item menu__item--active">Menu</li>
+          <li className="menu__item">Entrar</li>
+          <li className="menu__item">Contato</li>
+        </ul>
         <div className="menu__action-wrapper">
           <div className="menu__action">
             <img src={HamburgerIcon} />
@@ -32,82 +37,99 @@ const VenueView: React.FC = () => {
         </label>
       </S.SearchField>
 
-      <S.SectionsNavigator>
-        <div className="section section--active">
-          <div className="section__image">
-            <img src={""} alt={""} />
-          </div>
-          <div className="section__title">Burgers</div>
-        </div>
-        <div className="section">
-          <div className="section__image">
-            <img src={""} alt={""} />
-          </div>
-          <div className="section__title">Burgers</div>
-        </div>
-        <div className="section">
-          <div className="section__image">
-            <img src={""} alt={""} />
-          </div>
-          <div className="section__title">Burgers</div>
-        </div>
-        <div className="section">
-          <div className="section__image">
-            <img src={""} alt={""} />
-          </div>
-          <div className="section__title">Burgers</div>
-        </div>
-        <div className="section">
-          <div className="section__image">
-            <img src={""} alt={""} />
-          </div>
-          <div className="section__title">Burgers</div>
-        </div>
-        <div className="section">
-          <div className="section__image">
-            <img src={""} alt={""} />
-          </div>
-          <div className="section__title">Burgers</div>
-        </div>
-      </S.SectionsNavigator>
-
-      <S.SectionList>
-        <div className="section">
-          <div className="section-info">
-            <h2 className="section-info__title">Burgers</h2>
-            <button className="section-info__toggle">
-              <img src={ArrowIcon} />
-            </button>
-          </div>
-          <div className="section__items">teste</div>
-        </div>
-        <div className="section">
-          <div className="section-info">
-            <h2 className="section-info__title">Burgers</h2>
-            <button className="section-info__toggle">
-              <img src={ArrowIcon} />
-            </button>
-          </div>
-          <div className="section__items">
-            <S.Item>
-              <div className="details">
-                <span className="details__title">Hardcore</span>
-                <p className="details__description">
-                  180g angus beef burger, plus ribs, gruyere cheese, mayo,
-                  ketchup, bacon and more.
-                </p>
-                <span className="details__price">
-                  {(33.0).toLocaleString("pt-BR", {
-                    style: "currency",
-                    currency: "BRL",
-                  })}
-                </span>
+      <S.ContentWrapper>
+        <S.ContentContainer>
+          <S.SectionsNavigator>
+            <div className="section section--active">
+              <div className="section__image">
+                <img src={""} alt={""} />
               </div>
-              <img src={""} className="image" />
-            </S.Item>
-          </div>
-        </div>
-      </S.SectionList>
+              <div className="section__title">Burgers</div>
+            </div>
+            <div className="section">
+              <div className="section__image">
+                <img src={""} alt={""} />
+              </div>
+              <div className="section__title">Burgers</div>
+            </div>
+            <div className="section">
+              <div className="section__image">
+                <img src={""} alt={""} />
+              </div>
+              <div className="section__title">Burgers</div>
+            </div>
+            <div className="section">
+              <div className="section__image">
+                <img src={""} alt={""} />
+              </div>
+              <div className="section__title">Burgers</div>
+            </div>
+            <div className="section">
+              <div className="section__image">
+                <img src={""} alt={""} />
+              </div>
+              <div className="section__title">Burgers</div>
+            </div>
+            <div className="section">
+              <div className="section__image">
+                <img src={""} alt={""} />
+              </div>
+              <div className="section__title">Burgers</div>
+            </div>
+            <div className="section">
+              <div className="section__image">
+                <img src={""} alt={""} />
+              </div>
+              <div className="section__title">Burgers</div>
+            </div>
+            <div className="section">
+              <div className="section__image">
+                <img src={""} alt={""} />
+              </div>
+              <div className="section__title">Burgers</div>
+            </div>
+          </S.SectionsNavigator>
+
+          <S.SectionList>
+            <div className="section">
+              <div className="section-info">
+                <h2 className="section-info__title">Burgers</h2>
+                <button className="section-info__toggle">
+                  <img src={ArrowIcon} />
+                </button>
+              </div>
+              <div className="section__items">teste</div>
+            </div>
+            <div className="section">
+              <div className="section-info">
+                <h2 className="section-info__title">Burgers</h2>
+                <button className="section-info__toggle">
+                  <img src={ArrowIcon} />
+                </button>
+              </div>
+              <div className="section__items">
+                <S.Item>
+                  <div className="details">
+                    <span className="details__title">Hardcore</span>
+                    <p className="details__description">
+                      180g angus beef burger, plus ribs, gruyere cheese, mayo,
+                      ketchup, bacon and more.
+                    </p>
+                    <span className="details__price">
+                      {(33.0).toLocaleString("pt-BR", {
+                        style: "currency",
+                        currency: "BRL",
+                      })}
+                    </span>
+                  </div>
+                  <img src={""} className="image" />
+                </S.Item>
+              </div>
+            </div>
+          </S.SectionList>
+        </S.ContentContainer>
+        <S.BasketContainer>teste</S.BasketContainer>
+      </S.ContentWrapper>
     </>
   );
 };

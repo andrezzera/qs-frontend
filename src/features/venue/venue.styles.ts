@@ -32,6 +32,44 @@ export const Menu = styled.nav`
     text-align: center;
     letter-spacing: 0.75px;
   }
+
+  .menu__items {
+    height: 52px;
+    list-style: none;
+    display: none;
+  }
+
+  .menu__item {
+    min-width: 232px;
+    height: 52px;
+    padding: 14px 0;
+    letter-spacing: 0.5%;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .menu__item.menu__item--active {
+    border-bottom: 5px solid #fff;
+  }
+
+  @media (min-width: 1400px) {
+    height: 52px;
+    justify-content: center;
+    .menu__action-wrapper {
+      display: none;
+    }
+
+    .menu__title {
+      display: none;
+    }
+
+    .menu__items {
+      display: flex;
+    }
+  }
 `;
 
 export const Banner = styled.img`
@@ -49,6 +87,7 @@ export const SearchField = styled.div`
     border-radius: 7px;
     border: 1px solid #8a94a4;
     display: flex;
+    background: #fff;
   }
 
   .field__icon {
@@ -66,6 +105,49 @@ export const SearchField = styled.div`
     &::placeholder {
       color: #8a94a4;
     }
+  }
+
+  @media (min-width: 1400px) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .field__wrapper {
+      max-width: 1024px;
+    }
+  }
+`;
+
+export const ContentWrapper = styled.div`
+  @media (min-width: 1400px) {
+    display: flex;
+    width: 100%;
+    max-width: 1024px;
+    height: auto;
+    padding: 32px 40px;
+    background: #f8f9fa;
+    align-items: flex-start;
+    gap: 24px;
+    margin: auto;
+  }
+`;
+
+export const ContentContainer = styled.div`
+  @media (min-width: 1400px) {
+    width: 600px;
+    height: auto;
+    background: #fff;
+    box-shadow: 0 2px 14px rgba(0, 0, 0, 0.14);
+  }
+`;
+
+export const BasketContainer = styled.div`
+  width: 320px;
+  height: auto;
+  background: #fff;
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.14);
+  display: none;
+  @media (min-width: 1400px) {
+    display: block;
   }
 `;
 

@@ -1,7 +1,7 @@
-import VenueView from "./features/venue/venue.view";
+import VenuePage from "./features/venue";
 
 function App() {
-  return <VenueView />;
+  return <VenuePage />;
 }
 
 export default App;
